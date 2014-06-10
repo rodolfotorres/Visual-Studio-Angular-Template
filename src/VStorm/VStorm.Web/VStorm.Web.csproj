@@ -60,6 +60,7 @@
     <Content Include="app\app.js" />
     <Content Include="app\controllers\welcome\welcomeController.js" />
     <Content Include="app\partials\index.html" />
+    <Content Include="css\jasmine.css" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-cookies.js" />
@@ -358,6 +359,8 @@
     <Content Include="Scripts\i18n\angular-locale_zh.js" />
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
+    <Content Include="Scripts\jasmine-html.js" />
+    <Content Include="Scripts\jasmine.js" />
     <Content Include="test\e2e\senarios.js" />
     <Content Include="test\unit\controllers\welcome\welcomeCtrlSpec.js" />
     <Content Include="Web.config" />
