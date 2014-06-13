@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VStorm.API", "VStorm.API\VStorm.API.csproj", "{016AF152-A1F3-46C3-8ECB-75D7D244B0F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VStorm", "VStorm\VStorm.csproj", "{016AF152-A1F3-46C3-8ECB-75D7D244B0F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VStorm.API.Tests", "VStorm.API.Tests\VStorm.API.Tests.csproj", "{1A3D13F7-5D57-4711-9B2F-93772B72727E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VStorm.Tests", "VStorm.Tests\VStorm.Tests.csproj", "{1A3D13F7-5D57-4711-9B2F-93772B72727E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
