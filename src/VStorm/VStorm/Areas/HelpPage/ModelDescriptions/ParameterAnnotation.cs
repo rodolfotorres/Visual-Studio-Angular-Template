@@ -1,6 +1,6 @@
 using System;
 
-namespace VStorm.API.Areas.HelpPage.ModelDescriptions
+namespace VStorm.Areas.HelpPage.ModelDescriptions
 {
     public class ParameterAnnotation
     {

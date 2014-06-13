@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace VStorm.API.Areas.HelpPage
+namespace VStorm.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

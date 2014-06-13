@@ -133,7 +133,7 @@
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VStorm.API\VStorm.csproj">
+    <ProjectReference Include="..\VStorm\VStorm.csproj">
       <Project>{016AF152-A1F3-46C3-8ECB-75D7D244B0F4}</Project>
       <Name>VStorm</Name>
     </ProjectReference>

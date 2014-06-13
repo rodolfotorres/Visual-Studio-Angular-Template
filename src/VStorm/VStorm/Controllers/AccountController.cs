@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
 
-namespace VStorm.API.Controllers
+namespace VStorm.Controllers
 {
     public class AccountController : ApiController
     {

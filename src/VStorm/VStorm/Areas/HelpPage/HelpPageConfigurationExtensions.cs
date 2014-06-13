@@ -10,10 +10,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using VStorm.API.Areas.HelpPage.ModelDescriptions;
-using VStorm.API.Areas.HelpPage.Models;
+using VStorm.Areas.HelpPage.ModelDescriptions;
+using VStorm.Areas.HelpPage.Models;
 
-namespace VStorm.API.Areas.HelpPage
+namespace VStorm.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

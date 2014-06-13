@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace VStorm.API.Controllers
+namespace VStorm.Controllers
 {
     public class HomeController : Controller
     {

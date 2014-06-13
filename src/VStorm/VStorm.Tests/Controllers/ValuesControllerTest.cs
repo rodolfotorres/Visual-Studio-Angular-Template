@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
-using VStorm.API.Controllers;
+using VStorm.Controllers;
 
-namespace VStorm.API.Tests.Controllers
+namespace VStorm.Tests.Controllers
 {
     [TestFixture]
     public class ValuesControllerTest

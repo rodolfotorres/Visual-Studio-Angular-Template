@@ -1,9 +1,9 @@
 ﻿'use strict';
-var app = angular.module('vstorm', ['ngRoute', 'vstorm.controllers']);
+window.app = angular.module('vstorm', ['ngRoute', 'ngResource']);
 
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/welcome', { templateUrl: 'app/view/welcome.html', controller: 'welcomeController' })
-        .when('/welcome2', { templateUrl: 'home/welcome2', controller: 'welcomeController' })
+        .when('/values', { templateUrl: 'app/view/values.html', controller: 'valuesController' })
         .otherwise({ redirectTo: '/welcome' });
 }])
     .controller('RootController', ['$scope', '$route', '$routeParams', '$location', function ($scope, $route, $routeParams, $location) {

@@ -2,7 +2,7 @@
 /// <reference path="~/Scripts/angular.js" />
 /// <reference path="~/Scripts/angular-mocks.js" />
 /// <reference path="~/app/app.js" />
-/// <reference path="~/app/controllers/welcome/welcomeController.js" />
+/// <reference path="~/app/controllers/welcomeController.js" />
 
 describe('vstorm app', function () {
     describe('contact list', function() {

@@ -1,7 +1,8 @@
 using System.Web.Http;
 using System.Web.Mvc;
+using VStorm.Areas.HelpPage.App_Start;
 
-namespace VStorm.API.Areas.HelpPage
+namespace VStorm.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

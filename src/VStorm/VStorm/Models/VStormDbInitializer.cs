@@ -3,7 +3,7 @@ using System.Data.Entity;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace VStorm.API.Models
+namespace VStorm.Models
 {
     public class VStormDbInitializer : DropCreateDatabaseIfModelChanges<VStormEntities>
     {

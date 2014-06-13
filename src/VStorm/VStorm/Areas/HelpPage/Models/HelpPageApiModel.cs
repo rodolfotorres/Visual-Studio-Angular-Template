@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
-using VStorm.API.Areas.HelpPage.ModelDescriptions;
+using VStorm.Areas.HelpPage.ModelDescriptions;
 
-namespace VStorm.API.Areas.HelpPage.Models
+namespace VStorm.Areas.HelpPage.Models
 {
     /// <summary>
     /// The model that represents an API displayed on the help page.

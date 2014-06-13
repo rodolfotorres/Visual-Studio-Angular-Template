@@ -1,9 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-
-[assembly: OwinStartup(typeof(VStorm.API.Startup))]
-namespace VStorm.API
+[assembly: OwinStartup(typeof(VStorm.Startup))]
+namespace VStorm
 {
     public partial class Startup
     {

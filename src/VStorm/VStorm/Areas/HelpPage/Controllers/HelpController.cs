@@ -1,10 +1,11 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using VStorm.API.Areas.HelpPage.ModelDescriptions;
-using VStorm.API.Areas.HelpPage.Models;
+using VStorm.Areas.HelpPage;
+using VStorm.Areas.HelpPage.ModelDescriptions;
+using VStorm.Areas.HelpPage.Models;
 
-namespace VStorm.API.Areas.HelpPage.Controllers
+namespace VStorm.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

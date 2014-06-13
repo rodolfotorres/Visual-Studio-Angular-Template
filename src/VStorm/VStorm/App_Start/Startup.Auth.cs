@@ -4,10 +4,10 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using VStorm.API.Models;
-using VStorm.API.Provider;
+using VStorm.Models;
+using VStorm.Provider;
 
-namespace VStorm.API
+namespace VStorm
 {
     public partial class Startup
     {

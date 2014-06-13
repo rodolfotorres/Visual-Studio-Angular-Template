@@ -266,7 +266,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
+    <Content Include="app\controllers\valuesController.js" />
     <Content Include="app\controllers\welcomeController.js" />
+    <Content Include="app\services\valuesService.js" />
+    <Content Include="app\view\values.html" />
     <Content Include="app\view\welcome.html" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -697,7 +700,8 @@
     <Content Include="Scripts\knockout-3.1.0.js" />
     <Content Include="Scripts\modernizr-2.7.2.js" />
     <Content Include="test\e2e\senarios.js" />
-    <Content Include="test\unit\controllers\welcome\welcomeCtrlSpec.js" />
+    <Content Include="test\unit\controllers\welcomeCtrlSpec.js" />
+    <Content Include="test\unit\services\valueServiceSpec.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -729,13 +733,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-2.1.1.min.map" />
     <Content Include="Scripts\version.json" />
-    <Content Include="Views\Home\Welcome.cshtml" />
-    <Content Include="Views\Home\Welcome2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\directives\" />
     <Folder Include="app\partials\" />
-    <Folder Include="app\services\" />
     <Folder Include="app\welcome\" />
     <Folder Include="App_Data\" />
   </ItemGroup>

@@ -1,9 +1,9 @@
-﻿/// <reference path="../../../../Scripts/jasmine.js" />
-/// <reference path="../../../../Scripts/angular.js" />
-/// <reference path="../../../../Scripts/angular-route.js" />
-/// <reference path="../../../../Scripts/angular-mocks.js" />
-/// <reference path="../../../../app/app.js" />
-/// <reference path="../../../../app/controllers/welcome/welcomeController.js" />
+﻿/// <reference path="../../../Scripts/jasmine.js" />
+/// <reference path="../../../Scripts/angular.js" />
+/// <reference path="../../../Scripts/angular-route.js" />
+/// <reference path="../../../Scripts/angular-mocks.js" />
+/// <reference path="../../../app/app.js" />
+/// <reference path="../../../app/controllers/welcomeController.js" />
 
 'use strict';
  describe('WelcomeController', function() {

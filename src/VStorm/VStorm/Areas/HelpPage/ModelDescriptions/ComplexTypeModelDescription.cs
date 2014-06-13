@@ -1,6 +1,6 @@
 using System.Collections.ObjectModel;
 
-namespace VStorm.API.Areas.HelpPage.ModelDescriptions
+namespace VStorm.Areas.HelpPage.ModelDescriptions
 {
     public class ComplexTypeModelDescription : ModelDescription
     {

@@ -1,8 +1,6 @@
 ﻿'use strict';
 
-var controllers = angular.module('vstorm.controllers', []);
-
-controllers.controller('welcomeController', ['$scope', function ($scope) {
+window.app.controller('welcomeController', ['$scope', function ($scope) {
     $scope.vstormVersion = '0.1';
     $scope.contacts = [
         {
