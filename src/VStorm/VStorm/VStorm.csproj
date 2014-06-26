@@ -43,6 +43,15 @@
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Breeze.ContextProvider">
+      <HintPath>..\packages\Breeze.Server.ContextProvider.1.4.14\lib\Breeze.ContextProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Breeze.ContextProvider.EF6">
+      <HintPath>..\packages\Breeze.Server.ContextProvider.EF6.1.4.14\lib\Breeze.ContextProvider.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="Breeze.WebApi2">
+      <HintPath>..\packages\Breeze.Server.WebApi2.1.4.14\lib\Breeze.WebApi2.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -157,8 +166,9 @@
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.1.2\lib\net45\System.Web.Http.Cors.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Web.Http.OData">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.5.1.2\lib\net45\System.Web.Http.OData.dll</HintPath>
+    <Reference Include="System.Web.Http.OData, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.5.0.0\lib\net45\System.Web.Http.OData.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Http.Owin">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.1.2\lib\net45\System.Web.Http.Owin.dll</HintPath>
@@ -210,12 +220,16 @@
     </Reference>
     <Reference Include="System.Net.Http.WebRequest">
     </Reference>
+    <Reference Include="WebActivator">
+      <HintPath>..\packages\WebActivator.1.5.3\lib\net40\WebActivator.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease">
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\BreezeWebApiConfig.cs" />
     <Compile Include="Provider\ApplicationOAuthProvider.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -394,6 +408,9 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\breeze.intellisense.js" />
+    <Content Include="Scripts\breeze.debug.js" />
+    <Content Include="Scripts\breeze.min.js" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular-touch.min.js.map" />
     <Content Include="Scripts\angular-sanitize.min.js.map" />
@@ -699,6 +716,8 @@
     <Content Include="Scripts\knockout-3.1.0.debug.js" />
     <Content Include="Scripts\knockout-3.1.0.js" />
     <Content Include="Scripts\modernizr-2.7.2.js" />
+    <Content Include="Scripts\q.js" />
+    <Content Include="Scripts\q.min.js" />
     <Content Include="test\e2e\senarios.js" />
     <Content Include="test\unit\controllers\welcomeCtrlSpec.js" />
     <Content Include="test\unit\services\valueServiceSpec.js" />
