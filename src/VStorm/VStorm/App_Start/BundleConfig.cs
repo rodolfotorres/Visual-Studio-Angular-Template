@@ -37,10 +37,17 @@ namespace VStorm
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/html5up").Include("~/Content/html5up/js/skel.min.js",
+                "~/Content/html5up/js/init.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css",
                 "~/Content/bootstrap.css",
                 "~/Content/bootstrap-responsive.css",
                 "~/Content/breeze.directives.css"));
+
+            bundles.Add(new StyleBundle("~/Content/html5up/css/skel").Include("~/Content/html5up/css/skel.css",
+                "~/Content/html5up/css/style.css", "~/Content/html5up/css/style-wide.css",
+                "~/Content/html5up/css/style-noscript.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
