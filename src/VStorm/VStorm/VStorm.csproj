@@ -246,6 +246,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BreezeWebApiConfig.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Compile Include="Models\ContactsModel\ContactsDatabaseInitializer.cs" />
     <Compile Include="Controllers\ContactsController.cs" />
     <Compile Include="Models\ContactsModel\ContactItem.cs" />
     <Compile Include="Models\ContactsModel\ContactsContext.cs" />

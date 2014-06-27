@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
@@ -24,35 +23,6 @@ namespace VStorm
             Database.SetInitializer(new ContactsDatabaseInitializer());
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-        }
-    }
-
-    public class ContactsDatabaseInitializer : DropCreateDatabaseAlways<ContactsContext>
-    {
-        protected override void Seed(ContactsContext context)
-        {
-            SeedDatabase(context);
-        }
-
-        private void SeedDatabase(ContactsContext context)
-        {
-            var contacts = new List<ContactItem>()
-            {
-                new ContactItem()
-                {
-                    Description = "Contact1",
-                    Value = "Value1"
-                },
-                new ContactItem()
-                {
-                    Description = "Contact2",
-                    Value = "Value2"
-                },
-            };
-
-            contacts.ForEach(c=> context.Contacts.Add(c));
-
-            context.SaveChanges();
         }
     }
 }
