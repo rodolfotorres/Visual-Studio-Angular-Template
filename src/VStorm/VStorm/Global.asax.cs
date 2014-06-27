@@ -5,6 +5,8 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using VStorm.Models;
+using VStorm.Models.ContactsModel;
+using VStorm.Models.UsersModel;
 
 namespace VStorm
 {

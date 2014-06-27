@@ -5,6 +5,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
 using VStorm.Models;
+using VStorm.Models.UsersModel;
 using VStorm.Provider;
 
 namespace VStorm

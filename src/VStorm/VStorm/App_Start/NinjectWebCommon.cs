@@ -1,4 +1,5 @@
 using VStorm.Models;
+using VStorm.Models.ContactsModel;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(VStorm.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(VStorm.App_Start.NinjectWebCommon), "Stop")]

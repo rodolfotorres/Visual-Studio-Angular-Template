@@ -3,6 +3,7 @@ using System.Web.Http;
 using Breeze.ContextProvider.EF6;
 using Breeze.WebApi2;
 using VStorm.Models;
+using VStorm.Models.ContactsModel;
 
 namespace VStorm.Controllers
 {

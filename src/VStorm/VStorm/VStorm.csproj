@@ -247,9 +247,9 @@
     <Compile Include="App_Start\BreezeWebApiConfig.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="Controllers\ContactsController.cs" />
-    <Compile Include="Models\ContactItem.cs" />
-    <Compile Include="Models\ContactsContext.cs" />
-    <Compile Include="Models\ContactsProvider.cs" />
+    <Compile Include="Models\ContactsModel\ContactItem.cs" />
+    <Compile Include="Models\ContactsModel\ContactsContext.cs" />
+    <Compile Include="Models\ContactsModel\ContactsProvider.cs" />
     <Compile Include="Models\IValuesProvider.cs" />
     <Compile Include="Provider\ApplicationOAuthProvider.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -293,11 +293,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ApplicationUser.cs" />
-    <Compile Include="Models\VStormEntities.cs" />
+    <Compile Include="Models\UsersModel\ApplicationUser.cs" />
+    <Compile Include="Models\UsersModel\VStormEntities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="Models\VStormDbInitializer.cs" />
+    <Compile Include="Models\UsersModel\VStormDbInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
