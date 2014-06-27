@@ -18,9 +18,16 @@ namespace VStorm
                         "~/Scripts/jquery.validate*"));
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
-                "~/Scripts/angular.js", 
+                "~/Scripts/angular.js",
                 "~/Scripts/angular-route.js",
                 "~/Scripts/angular-resource.js"
+                ));
+
+            bundles.Add(new ScriptBundle("~/bundles/breeze").Include(
+                "~/Scripts/breeze.debug.js",
+                "~/Scripts/breeze.angular.js",
+                "~/Scripts/breeze.directives.js",
+                "~/Scripts/q.min.js"
                 ));
 
             bundles.Add(new ScriptBundle("~/bundles/app").IncludeDirectory("~/app", "*.js", true));
@@ -30,12 +37,10 @@ namespace VStorm
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/bootstrap").Include(
+            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css",
                 "~/Content/bootstrap.css",
-                "~/Content/bootstrap-responsive.css"
-                ));
-
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
+                "~/Content/bootstrap-responsive.css",
+                "~/Content/breeze.directives.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",

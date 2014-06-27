@@ -1,5 +1,5 @@
 ﻿'use strict';
-window.app = angular.module('vstorm', ['ngRoute', 'ngResource']);
+window.app = angular.module('vstorm', ['ngRoute', 'ngResource', 'breeze.angular']);
 
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/welcome', { templateUrl: 'app/view/welcome.html', controller: 'welcomeController' })

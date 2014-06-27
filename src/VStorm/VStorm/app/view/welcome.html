@@ -9,9 +9,8 @@
         <div class="col-md-10">
             <!--Body content-->
             <ul>
-                <li data-ng-repeat="contact in contacts | filter:query">{{contact.description}}</li>
+                <li data-ng-repeat="contact in contacts | filter: {Description: query}">{{contact.Description}}</li>
             </ul>
-
         </div>
     </div>
 </div>
