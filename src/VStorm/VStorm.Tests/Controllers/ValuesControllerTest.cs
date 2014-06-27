@@ -1,7 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using Moq;
 using NUnit.Framework;
 using VStorm.Controllers;
+using VStorm.Models;
 
 namespace VStorm.Tests.Controllers
 {
@@ -12,7 +15,10 @@ namespace VStorm.Tests.Controllers
         public void Get()
         {
             // Arrange
-            var controller = new ValuesController();
+            var mock = new Mock<IValuesProvider>();
+
+            mock.Setup(x => x.GetValues()).Returns(new string[] { "value1", "value2" });
+            var controller = new ValuesController(mock.Object);
 
             // Act
             IEnumerable<string> result = controller.Get();
@@ -28,7 +34,8 @@ namespace VStorm.Tests.Controllers
         public void GetById()
         {
             // Arrange
-            var controller = new ValuesController();
+            var mock = new Mock<IValuesProvider>();
+            var controller = new ValuesController(mock.Object);
 
             // Act
             var result = controller.Get(5);
@@ -41,7 +48,8 @@ namespace VStorm.Tests.Controllers
         public void Post()
         {
             // Arrange
-            var controller = new ValuesController();
+            var mock = new Mock<IValuesProvider>();
+            var controller = new ValuesController(mock.Object);
 
             // Act
             controller.Post("value");
@@ -53,7 +61,8 @@ namespace VStorm.Tests.Controllers
         public void Put()
         {
             // Arrange
-            var controller = new ValuesController();
+            var mock = new Mock<IValuesProvider>();
+            var controller = new ValuesController(mock.Object);
 
             // Act
             controller.Put(5, "value");
@@ -65,7 +74,8 @@ namespace VStorm.Tests.Controllers
         public void Delete()
         {
             // Arrange
-            var controller = new ValuesController();
+            var mock = new Mock<IValuesProvider>();
+            var controller = new ValuesController(mock.Object);
 
             // Act
             controller.Delete(5);

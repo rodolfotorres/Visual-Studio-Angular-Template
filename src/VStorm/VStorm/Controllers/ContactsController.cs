@@ -9,26 +9,28 @@ namespace VStorm.Controllers
     [BreezeController]
     public class ContactsController : ApiController
     {
+        private readonly IContextProvider<ContactsContext> _provider;
+
         readonly EFContextProvider<ContactsContext> _contextProvider =
             new EFContextProvider<ContactsContext>();
 
-        public ContactsController()
+        public ContactsController(IContextProvider<ContactsContext> provider)
         {
-            
+            _provider = provider;
         }
 
         // ~/breeze/todos/Metadata 
         [HttpGet]
         public string Metadata()
         {
-            return _contextProvider.Metadata();
+            return _provider.Metadata();
         }
 
         // ~/breeze/contacts/Contacts
         [HttpGet]
         public IQueryable<ContactItem> Contacts()
         {
-            return _contextProvider.Context.Contacts;
+            return _provider.Context.Contacts;
         }
     }
 }

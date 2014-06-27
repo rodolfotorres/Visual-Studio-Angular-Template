@@ -1,15 +1,23 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
+using VStorm.Models;
 
 namespace VStorm.Controllers
 {
 
     public class ValuesController : ApiController
     {
+        private readonly IValuesProvider _provider;
+
+        public ValuesController(IValuesProvider provider)
+        {
+            _provider = provider;
+        }
+
         // GET api/values
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _provider.GetValues();
         }
 
         // GET api/values/5
