@@ -8,6 +8,12 @@ window.app.directive("ehSimple", function() {
 window.app.directive('contacts', ['dataservice', function (dataservice) {
     return {
         restrict: 'A',
-        templateUrl: '/app/directives/contacts/contacts.html'
+        templateUrl: '/app/directives/contacts/contacts.html',
+        link: function (scope, element, attrs) {
+            scope.contacts = [];
+            dataservice.getContacts().then(function(data) {
+                scope.contacts = data.results;
+            });
+        }
     }
 }]);

@@ -1,4 +1,7 @@
 ﻿<div>
-    <h1>directive html</h1>    
+    <h1>Contacts</h1>
+    <ul>
+        <li data-ng-repeat="contact in contacts | filter: {Description: query}">{{contact.Description}}</li>
+    </ul> 
 </div>
 

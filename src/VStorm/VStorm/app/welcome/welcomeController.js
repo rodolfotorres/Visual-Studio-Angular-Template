@@ -2,13 +2,6 @@
 
 window.app.controller('welcomeController', ['$scope', 'dataservice', function ($scope, dataservice) {
     $scope.vstormVersion = '0.1';
-    $scope.contacts = [];
-
-    dataservice.getContacts().then(function(data) {
-        $scope.contacts = data.results;
-        console.log($scope.contacts);
-    });
-
     //$scope.contacts = [
     //    {
     //        description: 'Github',
