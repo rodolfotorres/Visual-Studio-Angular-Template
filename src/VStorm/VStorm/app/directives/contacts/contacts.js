@@ -5,10 +5,9 @@ window.app.directive("ehSimple", function() {
         element.addClass("plain");
     }
 });
-window.app.directive('contacts', function () {
+window.app.directive('contacts', ['dataservice', function (dataservice) {
     return {
-        restrict: 'E',
-        replace: 'true',
+        restrict: 'A',
         templateUrl: '/app/directives/contacts/contacts.html'
     }
-});
+}]);

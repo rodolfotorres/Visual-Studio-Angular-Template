@@ -1,12 +1,4 @@
-﻿/// <reference path="../../../Scripts/jasmine.js" />
-/// <reference path="../../../Scripts/angular.js" />
-/// <reference path="../../../Scripts/angular-route.js" />
-/// <reference path="../../../Scripts/angular-resource.js" />
-/// <reference path="../../../Scripts/angular-mocks.js" />
-/// <reference path="../../../Scripts/breeze.debug.js" />
-/// <reference path="../../../Scripts/breeze.angular.js" />
-/// <reference path="../../../app/app.js" />
-/// <reference path="../../../app/services/valuesService.js" />
+﻿/// <reference path="../../_references.js" />
 
 'use strict';
 describe('Value Services', function () {

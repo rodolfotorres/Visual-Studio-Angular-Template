@@ -2,8 +2,8 @@
 window.app = angular.module('vstorm', ['ngRoute', 'ngResource', 'breeze.angular']);
 
 app.config(['$routeProvider', function ($routeProvider) {
-    $routeProvider.when('/welcome', { templateUrl: 'app/view/welcome.html', controller: 'welcomeController' })
-        .when('/values', { templateUrl: 'app/view/values.html', controller: 'valuesController' })
+    $routeProvider.when('/welcome', { templateUrl: 'app/welcome/welcome.html', controller: 'welcomeController' })
+        .when('/values', { templateUrl: 'app/values/values.html', controller: 'valuesController' })
         .otherwise({ redirectTo: '/welcome' });
 }])
     .controller('RootController', ['$scope', '$route', '$routeParams', '$location', function ($scope, $route, $routeParams, $location) {
